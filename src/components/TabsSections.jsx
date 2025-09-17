@@ -5,6 +5,12 @@ import EventLogs from "./EventLogs";
 import AnalyticsPart from "./AnalyticsPart";
 
 const TabsSection = () => {
+  
+
+  
+  
+
+
   return (
     <div>
       <Tabs defaultValue="feeds" className=" mt-4  m-2 md:mx-4 ">

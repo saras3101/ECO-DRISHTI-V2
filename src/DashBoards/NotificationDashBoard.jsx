@@ -31,7 +31,7 @@ const NotificationDashBoard = () => {
             </button>
             <button className=" h-10 w-28 mt-3 mb-3 mx-1  text-l items-center border rounded hover:bg-gray-200">
               <div className="flex flex-row justify-center items-center ">
-                <ArrowBigLeftDashIcon className="w-5 h-5 mr-2 " /> Back
+                <ArrowBigLeftDashIcon className="w-5 h-5 mr-2 " /> logOut
               </div>
             </button>
           </div>
