@@ -7,8 +7,17 @@ import {
   MapPinnedIcon,
   AlertTriangleIcon,
 } from "lucide-react";
+import { useNavigate } from 'react-router-dom'
+
 
 const NotificationDashBoard = () => {
+
+  const navigate = useNavigate();
+
+  const logOUTFN = () =>{
+    navigate('/login/admin-dashboard')
+  }
+
   return (
     <div className="h-full">
       <div className=" bg-card ">
@@ -29,9 +38,9 @@ const NotificationDashBoard = () => {
                 <RefreshCw className="w-4 h-4 mr-2 " /> Refresh
               </div>
             </button>
-            <button className=" h-10 w-28 mt-3 mb-3 mx-1  text-l items-center border rounded hover:bg-gray-200">
+            <button  onClick={logOUTFN} className=" h-10 w-28 mt-3 mb-3 mx-1  text-l items-center border rounded hover:bg-gray-200">
               <div className="flex flex-row justify-center items-center ">
-                <ArrowBigLeftDashIcon className="w-5 h-5 mr-2 " /> logOut
+                <ArrowBigLeftDashIcon className="w-5 h-5 mr-2 " /> Back
               </div>
             </button>
           </div>

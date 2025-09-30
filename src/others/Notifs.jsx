@@ -1,10 +1,13 @@
 import React from 'react'
 import { Clock, MapPin, Camera, ExternalLink } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+
 
 const Notifs = () => {
-    const handleHandle = () =>{
-        window.open('/notif-dashboard', '_blank', 'noopener,noreferrer')
 
+    const navigate = useNavigate()
+    const handleHandle = () =>{
+        navigate('/notif-dashboard')
     }
   return (
     <div>

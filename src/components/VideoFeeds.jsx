@@ -2,16 +2,18 @@ import CamFeedDashBoard from '@/DashBoards/CamFeedDashBoard';
 import { Camera, ExternalLink, Pause, Play } from 'lucide-react'
 import React from 'react'
 import { useState } from 'react';
+import { useNavigate} from 'react-router-dom'
 
 const VideoFeeds = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const navigate = useNavigate()
+  
   const handlePlay = () =>{
     setIsPlaying(!isPlaying);
 
   };
-  const openPage = () =>{
-    window.open('/cam-dashboard', '_blank', 'noopener,noreferrer')
-    
+  const openPage = () =>{    
+    navigate('/cam-dashboard');
   }
 
 
@@ -20,10 +22,10 @@ const VideoFeeds = () => {
       <div className='flex flex-wrap justify-between m-4'>
         <div className='flex flex-col'>
             <div className='flex items-center gap-2'>
-              <h3 className='font-semibold text-2xl'>Main Street Camera</h3>
-              <button onClick={openPage} className=' border border-gray-200 rounded p-1 hover:bg-gray-100'><ExternalLink className='h-5 w-5' /></button>
+              <h3 className='font-semibold text-xl'>Main Street Camera</h3>
+              <button onClick={openPage} className=' border border-gray-200 rounded p-1 hover:bg-gray-100'><ExternalLink className='h-4 w-4' /></button>
             </div>
-            <h1 className=' mt-1 my-3'>Camera ID: 230978</h1>
+            <h1 className=' mt-0 text-sm'>Camera ID: 230978</h1>
 
         </div>
         <div className='m-2'>

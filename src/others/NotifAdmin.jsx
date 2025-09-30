@@ -1,9 +1,13 @@
 import React from 'react'
 import { AlertTriangleIcon, ExternalLink } from 'lucide-react'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const NotifAdmin = () => {
+    const navigate = useNavigate();
+
+
     const handleNewPage = () =>{
-        window.open('/notif-dashboard', '_blank', 'noopener,noreferrer')
+        navigate('/notif-dashboard')
     }
   return (
     <div>
