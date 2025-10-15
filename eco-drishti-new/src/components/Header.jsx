@@ -1,7 +1,13 @@
 import { Shield, RefreshCw } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
+import { useFormState } from 'react-dom'
 
 const Header = () => {
+  const logOut = () =>{
+    window.location.reload()
+  }
+
+
   return (
 
     <div className=' bg-card '>
@@ -21,7 +27,7 @@ const Header = () => {
                 <RefreshCw className="w-4 h-4 mr-2 " /> Refresh
             </div>
            </button>
-           <button className=' h-10 w-28 mt-3 mb-3 mx-1 px-1 py-1  hover:bg-gray-200  border rounded'>Log Out</button>
+           <button onClick={logOut} className=' h-10 w-28 mt-3 mb-3 mx-1 px-1 py-1  hover:bg-gray-200  border rounded'>Log Out</button>
         </div>
       </div>
 

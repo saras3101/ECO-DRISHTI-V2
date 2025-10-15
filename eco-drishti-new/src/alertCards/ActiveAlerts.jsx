@@ -12,9 +12,8 @@ const ActiveAlerts = () => {
 
             </div>
             <div className=''> 
-                <h1 className='font-bold text-3xl'>2</h1>
+                <h1 className='font-bold text-3xl'>4</h1>
                 <button className='bg-black text-white px-3 py-1 mt-2 mb-2 text-[12px] rounded-2xl'>Refresh</button>
-
             </div>
         </div>      
     </div>
